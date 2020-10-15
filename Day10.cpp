@@ -24,12 +24,10 @@ int main()
         }
         n = n / 2;
     }
-    for(int i = 0; i < bin.length(); i++) //counting the number of continous ones.
+    for(int i = 0; i < (int)bin.length(); i++) //counting the number of continous ones.
     {
         if(bin[i] == '1'){
-            if(flag == true){
-            c++;
-            }
+            c += (int)flag; // no need to check if flag is 0 or 1.
             flag = true;
         }
         else{

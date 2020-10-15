@@ -16,9 +16,14 @@ class Difference
     int computeDifference() //Calculating the maximum difference.
     {
         int n = elements.size();
+        /*
         sort(elements.begin(), elements.end());
         maximumDifference = abs(elements.at(n - 1) - elements.at(0));
         return maximumDifference;
+        */
+        // No need to sort
+        return *std::max_element(elements.begin(), elements.end()) -\
+            *std::min_element(elements.begin(), elements.end())
     }
 };
 int main()

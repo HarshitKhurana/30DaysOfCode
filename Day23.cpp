@@ -41,11 +41,11 @@ class Solution{
             return;
         }
         q.push(root);
-        while(q.empty() != true)
+        while(!q.empty())
         {
             Node* current = q.front();
             cout << current->data << " ";
-            if(current->left != NULL){
+            if(current->left){
                 q.push(current->left);
             }
             if(current->right)

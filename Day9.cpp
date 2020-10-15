@@ -11,6 +11,9 @@ int main()
 }
 int factorial(int n)
 {
+    // one liner
+    return n > 0 ? factorial(n-) : 1;
+
     if(n > 0)
     return n * factorial(n - 1);
     else

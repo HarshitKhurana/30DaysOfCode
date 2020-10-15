@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include <map>
+#include <unordered_map>
 #include <string>
 using namespace std;
 int main()
@@ -12,7 +12,7 @@ int main()
     int num;
     cin >> n;
     string ar[n];
-    map<string, int> mp;
+    unordered_map<string, int> mp;  // unordered-map.find() is O(1), map.find() is O(logN)
     for(int i = 1; i <= n; i++)
     {
         cin >> name >> num;
